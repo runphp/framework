@@ -28,6 +28,11 @@
             "Runphp\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Runphp\\": "tests"
+        }
+    },
     "scripts": {
         "test": "phpunit",
         "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
@@ -40,5 +45,7 @@
     },
     "config": {
         "sort-packages": true
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
